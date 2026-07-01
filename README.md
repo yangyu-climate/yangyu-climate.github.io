@@ -2,7 +2,7 @@
 
 Static academic personal website for Yang Yu, Research Associate III in Physical Oceanography at Woods Hole Oceanographic Institution.
 
-The current content is synchronized with `YANG_CV_202607.pdf`.
+The current content is synchronized with `Yang_Yu_CV_202607_updated.pdf`.
 
 ## Preview
 
