@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 300" role="img" aria-labelledby="title desc">
+  <title id="title">Diurnal forcing over marginal seas</title>
+  <desc id="desc">Shelf-sea temperature and salinity variability driven by diurnal surface forcing.</desc>
+  <rect width="480" height="300" fill="#eff7f3"/>
+  <path d="M0 112 C90 96 148 128 227 108 S372 95 480 115 L480 300 L0 300Z" fill="#2c8590"/>
+  <path d="M0 164 C88 147 151 180 235 162 S373 146 480 166 L480 300 L0 300Z" fill="#0f4f61"/>
+  <g fill="none" stroke="#d8a83f" stroke-width="3" opacity=".78">
+    <path d="M30 198 C116 172 170 220 255 192 S377 170 454 200"/>
+    <path d="M30 228 C119 202 170 249 255 223 S377 201 454 230"/>
+    <path d="M30 257 C118 235 170 277 255 253 S377 231 454 260"/>
+  </g>
+  <g stroke="#fbfdfb" stroke-width="3" opacity=".85">
+    <line x1="80" y1="58" x2="80" y2="88"/>
+    <line x1="80" y1="58" x2="68" y2="72"/>
+    <line x1="80" y1="58" x2="92" y2="72"/>
+    <line x1="168" y1="52" x2="168" y2="88"/>
+    <line x1="168" y1="52" x2="154" y2="68"/>
+    <line x1="168" y1="52" x2="182" y2="68"/>
+  </g>
+  <circle cx="383" cy="71" r="31" fill="#d8a83f" opacity=".95"/>
+  <path d="M292 82 C328 61 362 61 398 82" fill="none" stroke="#d66a42" stroke-width="4" opacity=".7"/>
+</svg>

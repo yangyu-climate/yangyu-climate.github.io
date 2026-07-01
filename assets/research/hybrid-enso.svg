@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 300" role="img" aria-labelledby="title desc">
+  <title id="title">Hybrid coupled ENSO modeling</title>
+  <desc id="desc">Tropical Pacific sea-surface temperature gradients, atmospheric coupling, and biogeochemical feedbacks.</desc>
+  <rect width="480" height="300" fill="#edf7f7"/>
+  <path d="M0 92 C92 111 164 75 246 96 S391 121 480 86 L480 300 L0 300Z" fill="#0f4f61"/>
+  <path d="M0 178 C90 151 178 164 246 184 S392 217 480 177 L480 300 L0 300Z" fill="#2c8590"/>
+  <ellipse cx="171" cy="182" rx="92" ry="34" fill="#d66a42" opacity=".75"/>
+  <ellipse cx="310" cy="151" rx="94" ry="31" fill="#73c8bd" opacity=".7"/>
+  <g fill="none" stroke="#fbfdfb" stroke-width="3" opacity=".75">
+    <path d="M54 132 C116 102 184 104 238 131 C296 160 366 159 426 127"/>
+    <path d="M48 219 C117 192 177 197 242 224 C312 251 376 244 436 210"/>
+  </g>
+  <g stroke="#102322" stroke-width="3" opacity=".45">
+    <line x1="91" y1="57" x2="397" y2="57"/>
+    <line x1="91" y1="57" x2="116" y2="45"/>
+    <line x1="91" y1="57" x2="116" y2="69"/>
+  </g>
+  <g fill="#d8a83f" opacity=".9">
+    <circle cx="210" cy="227" r="5"/>
+    <circle cx="232" cy="237" r="4"/>
+    <circle cx="255" cy="226" r="3"/>
+    <circle cx="284" cy="235" r="4"/>
+  </g>
+</svg>

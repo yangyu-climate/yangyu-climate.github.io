@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 300" role="img" aria-labelledby="title desc">
+  <title id="title">Agricultural fallowing and dust emissions</title>
+  <desc id="desc">Agricultural fields, wind-driven dust, and air-quality transport in California's Central Valley.</desc>
+  <rect width="480" height="300" fill="#f5f0e3"/>
+  <path d="M0 92 C90 72 157 101 244 84 S382 72 480 92 L480 300 L0 300Z" fill="#d7c48f"/>
+  <path d="M0 158 C87 143 150 174 244 151 S386 137 480 156 L480 300 L0 300Z" fill="#b98b54"/>
+  <g stroke="#795b3d" stroke-width="2" opacity=".5">
+    <path d="M20 226 C100 188 177 177 255 166 C333 155 404 146 470 130"/>
+    <path d="M-10 260 C95 212 198 197 292 181 C361 169 421 158 500 137"/>
+    <path d="M70 300 C144 245 243 224 330 205 C394 191 428 178 480 160"/>
+  </g>
+  <g fill="none" stroke="#d66a42" stroke-width="5" stroke-linecap="round" opacity=".75">
+    <path d="M55 112 C102 86 169 95 229 116"/>
+    <path d="M112 136 C171 104 251 115 314 141"/>
+    <path d="M174 164 C244 130 328 142 397 172"/>
+  </g>
+  <g fill="#6b7f74" opacity=".65">
+    <rect x="48" y="206" width="46" height="18" rx="2"/>
+    <rect x="112" y="195" width="65" height="20" rx="2"/>
+    <rect x="231" y="210" width="57" height="18" rx="2"/>
+  </g>
+  <path d="M336 54 L402 54 L429 88 L365 88Z" fill="#e8f0ed" stroke="#536767" stroke-width="3"/>
+  <path d="M363 89 L428 89 L428 132 L363 132Z" fill="#fbfdfb" stroke="#536767" stroke-width="3"/>
+</svg>

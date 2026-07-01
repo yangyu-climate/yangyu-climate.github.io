@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 300" role="img" aria-labelledby="title desc">
+  <title id="title">High-resolution coupled modeling of extreme events</title>
+  <desc id="desc">A tropical cyclone vortex over an ocean eddy field with remote precipitation bands.</desc>
+  <rect width="480" height="300" fill="#e8f1f3"/>
+  <rect y="92" width="480" height="208" fill="#164d66"/>
+  <g fill="none" stroke="#f7fbf7" stroke-linecap="round" opacity=".9">
+    <path d="M246 151 C217 111 276 79 327 100 C385 124 379 201 323 223 C267 246 203 219 198 171" stroke-width="12"/>
+    <path d="M280 146 C300 132 330 135 342 157 C355 184 325 205 300 194" stroke-width="7"/>
+  </g>
+  <circle cx="275" cy="163" r="17" fill="#164d66"/>
+  <g fill="none" stroke="#73c8bd" stroke-width="3" opacity=".75">
+    <path d="M22 236 C86 210 141 246 204 221 C274 193 327 232 397 203 C432 188 456 190 480 198"/>
+    <path d="M0 264 C72 240 133 272 205 251 C268 233 329 260 391 237 C433 222 460 223 480 228"/>
+  </g>
+  <g fill="none" stroke="#d66a42" stroke-width="4" opacity=".8">
+    <path d="M44 82 C96 62 155 65 209 87"/>
+    <path d="M68 110 C126 92 184 96 238 119"/>
+  </g>
+</svg>

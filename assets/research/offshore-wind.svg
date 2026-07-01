@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 300" role="img" aria-labelledby="title desc">
+  <title id="title">Offshore wind and shelf sea coupling</title>
+  <desc id="desc">Offshore wind turbines over the continental shelf with atmospheric wakes, ocean mixing, and ecological response.</desc>
+  <defs>
+    <linearGradient id="sky" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0" stop-color="#d9eef0"/>
+      <stop offset="1" stop-color="#f7fbf7"/>
+    </linearGradient>
+    <linearGradient id="sea" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0" stop-color="#2c8590"/>
+      <stop offset="1" stop-color="#0b4054"/>
+    </linearGradient>
+  </defs>
+  <rect width="480" height="300" fill="url(#sky)"/>
+  <path d="M0 128 C80 115 135 145 215 130 S365 112 480 126 L480 300 L0 300Z" fill="url(#sea)"/>
+  <path d="M0 207 C80 190 153 220 235 204 S382 186 480 208" fill="none" stroke="#b6f1dc" stroke-width="3" opacity=".75"/>
+  <path d="M0 237 C96 219 155 252 254 233 S377 220 480 238" fill="none" stroke="#73c8bd" stroke-width="2" opacity=".55"/>
+  <g fill="none" stroke="#ffffff" stroke-width="2" opacity=".8">
+    <path d="M67 98 C119 84 157 86 207 103"/>
+    <path d="M74 117 C132 104 173 104 227 120"/>
+    <path d="M250 93 C308 78 358 84 421 102"/>
+  </g>
+  <g stroke="#f7fbf7" stroke-linecap="round">
+    <g transform="translate(315 119)">
+      <line x1="0" y1="0" x2="0" y2="-65" stroke-width="5"/>
+      <circle cx="0" cy="-72" r="7" fill="#f7fbf7"/>
+      <line x1="0" y1="-72" x2="0" y2="-112" stroke-width="4"/>
+      <line x1="0" y1="-72" x2="35" y2="-50" stroke-width="4"/>
+      <line x1="0" y1="-72" x2="-34" y2="-50" stroke-width="4"/>
+    </g>
+    <g transform="translate(387 126) scale(.82)">
+      <line x1="0" y1="0" x2="0" y2="-65" stroke-width="5"/>
+      <circle cx="0" cy="-72" r="7" fill="#f7fbf7"/>
+      <line x1="0" y1="-72" x2="0" y2="-112" stroke-width="4"/>
+      <line x1="0" y1="-72" x2="35" y2="-50" stroke-width="4"/>
+      <line x1="0" y1="-72" x2="-34" y2="-50" stroke-width="4"/>
+    </g>
+  </g>
+  <g opacity=".75">
+    <path d="M310 142 C300 166 322 180 311 207 C302 230 330 242 321 272" fill="none" stroke="#d8a83f" stroke-width="4"/>
+    <path d="M389 150 C381 174 401 190 392 214 C384 238 408 249 399 278" fill="none" stroke="#d8a83f" stroke-width="3"/>
+  </g>
+  <circle cx="255" cy="244" r="5" fill="#8fe0a3" opacity=".9"/>
+  <circle cx="279" cy="254" r="4" fill="#8fe0a3" opacity=".75"/>
+  <circle cx="228" cy="261" r="3" fill="#8fe0a3" opacity=".75"/>
+</svg>

@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 300" role="img" aria-labelledby="title desc">
+  <title id="title">Irrigation impacts on meteorology and air quality</title>
+  <desc id="desc">Irrigated agricultural fields with water vapor fluxes and boundary-layer response.</desc>
+  <rect width="480" height="300" fill="#eaf4ef"/>
+  <path d="M0 158 L480 122 L480 300 L0 300Z" fill="#88a86b"/>
+  <path d="M0 204 L480 164 L480 300 L0 300Z" fill="#5f8c62"/>
+  <g stroke="#dff6ef" stroke-width="3" opacity=".8">
+    <path d="M26 218 L452 176"/>
+    <path d="M52 249 L474 207"/>
+    <path d="M86 282 L480 241"/>
+  </g>
+  <g fill="none" stroke="#2c8590" stroke-width="4" stroke-linecap="round" opacity=".75">
+    <path d="M80 179 C64 150 92 135 78 109 C67 87 90 75 82 52"/>
+    <path d="M167 170 C151 141 177 124 165 101 C154 80 178 66 171 44"/>
+    <path d="M268 160 C253 134 278 118 266 94 C257 75 280 60 274 39"/>
+  </g>
+  <g fill="none" stroke="#d66a42" stroke-width="3" opacity=".8">
+    <path d="M325 89 C356 76 399 78 430 94"/>
+    <path d="M315 113 C355 98 403 101 442 119"/>
+  </g>
+  <circle cx="80" cy="180" r="10" fill="#fbfdfb" stroke="#0d746d" stroke-width="3"/>
+  <circle cx="167" cy="171" r="10" fill="#fbfdfb" stroke="#0d746d" stroke-width="3"/>
+  <circle cx="268" cy="161" r="10" fill="#fbfdfb" stroke="#0d746d" stroke-width="3"/>
+</svg>
