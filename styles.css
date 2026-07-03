@@ -233,6 +233,10 @@ h1 {
   white-space: nowrap;
 }
 
+.keep-together {
+  white-space: nowrap;
+}
+
 .hero-portrait {
   position: relative;
   width: 100%;
@@ -1084,6 +1088,10 @@ time {
   }
 
   .no-wrap {
+    white-space: normal;
+  }
+
+  .keep-together {
     white-space: normal;
   }
 
