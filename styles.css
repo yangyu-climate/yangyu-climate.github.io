@@ -234,7 +234,7 @@ h1 {
 }
 
 .keep-together {
-  white-space: nowrap;
+  white-space: normal;
 }
 
 .hero-portrait {
@@ -383,7 +383,9 @@ h3 {
 }
 
 .intro p {
-  max-width: 96ch;
+  max-width: 90ch;
+  font-size: 17px;
+  line-height: 1.72;
 }
 
 .theme-card p,
@@ -634,6 +636,7 @@ h3 {
 }
 
 .publications .section-heading h2 {
+  font-size: clamp(36px, 4.4vw, 48px);
   white-space: nowrap;
 }
 
@@ -708,6 +711,10 @@ h3 {
   padding: 24px;
   border-left: 4px solid color-mix(in srgb, var(--accent-2) 72%, var(--surface));
   box-shadow: 0 10px 28px rgba(23, 35, 47, 0.06);
+}
+
+.project:first-child {
+  grid-template-columns: 170px minmax(220px, 0.58fr) minmax(0, 1.18fr) minmax(170px, 200px);
 }
 
 .project > .project-visual {
