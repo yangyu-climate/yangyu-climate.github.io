@@ -625,10 +625,12 @@ h3 {
   white-space: nowrap;
 }
 
+.models,
 .tools {
   border-top: 1px solid var(--line);
 }
 
+.models-lede,
 .tools-lede {
   max-width: 72ch;
   margin: 0;
@@ -637,6 +639,7 @@ h3 {
 }
 
 .github-profile-link,
+.model-link,
 .tool-link {
   display: inline-flex;
   align-items: center;
@@ -651,12 +654,97 @@ h3 {
 }
 
 .github-profile-link span,
+.model-link span,
 .tool-link span {
   transition: transform 180ms ease;
 }
 
 .github-profile-link:hover span {
   transform: translate(2px, -2px);
+}
+
+.model-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.model-card {
+  display: flex;
+  min-width: 0;
+  flex-direction: column;
+  padding: 28px;
+  border: 1px solid var(--line);
+  border-top: 4px solid color-mix(in srgb, var(--accent-3) 82%, var(--surface));
+  border-radius: 8px;
+  background: color-mix(in srgb, var(--surface) 95%, var(--surface-2));
+  box-shadow: var(--shadow);
+}
+
+.model-card-topline {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+  margin-bottom: 20px;
+}
+
+.model-icon {
+  display: grid;
+  place-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 8px;
+  background: color-mix(in srgb, var(--accent-3) 14%, var(--surface));
+  color: var(--accent-3);
+  font-size: 13px;
+  font-weight: 950;
+}
+
+.model-category {
+  color: var(--muted);
+  font-size: 12px;
+  font-weight: 850;
+  letter-spacing: 0.04em;
+  text-align: right;
+  text-transform: uppercase;
+}
+
+.model-card h3 {
+  color: var(--ocean);
+  font-size: 25px;
+}
+
+.model-card p {
+  flex: 1;
+  max-width: 62ch;
+  color: var(--muted);
+}
+
+.model-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+  margin: 4px 0 22px;
+  padding: 0;
+  list-style: none;
+}
+
+.model-tags li {
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  padding: 5px 9px;
+  color: var(--accent-3);
+  font-size: 11px;
+  font-weight: 800;
+}
+
+.model-link {
+  align-self: flex-start;
+}
+
+.model-link:hover span {
+  transform: translateX(4px);
 }
 
 .tool-grid {
@@ -697,7 +785,7 @@ h3 {
   font-weight: 950;
 }
 
-.tool-language {
+.tool-category {
   color: var(--muted);
   font-size: 12px;
   font-weight: 850;
@@ -1114,6 +1202,10 @@ time {
     grid-template-columns: 1fr;
   }
 
+  .model-grid {
+    grid-template-columns: 1fr;
+  }
+
   .theme-card-secondary {
     gap: 0;
   }
@@ -1243,6 +1335,7 @@ time {
 
   .project,
   .contact-panel,
+  .model-card,
   .tool-card,
   .cv-card,
   .cv-block {

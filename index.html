@@ -20,6 +20,7 @@
       <nav class="nav" aria-label="Primary navigation">
         <a href="#about">About</a>
         <a href="#research">Research</a>
+        <a href="#models">Models</a>
         <a href="#tools">Tools</a>
         <a href="#publications">Publications</a>
         <a href="#cv">CV</a>
@@ -387,14 +388,91 @@
         </div>
       </section>
 
+      <section class="section models" id="models">
+        <div class="section-heading">
+          <div>
+            <div class="section-kicker">Open Model Development</div>
+            <h2>Models shared on GitHub</h2>
+            <p class="models-lede">
+              Modeling frameworks developed to investigate coupled climate dynamics and
+              land–atmosphere interactions across regional Earth systems.
+            </p>
+          </div>
+          <a
+            class="github-profile-link"
+            href="https://github.com/yangyu-climate"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            All repositories <span aria-hidden="true">&nearr;</span>
+          </a>
+        </div>
+
+        <div class="model-grid">
+          <article class="model-card">
+            <div class="model-card-topline">
+              <span class="model-icon" aria-hidden="true">HC</span>
+              <span class="model-category">Coupled Ocean–Atmosphere</span>
+            </div>
+            <h3>HCM_ROMS</h3>
+            <p>
+              A flexible hybrid coupled model that integrates ROMS with a statistical atmospheric
+              model for tropical Pacific climate variability and El Niño–Southern Oscillation
+              studies.
+            </p>
+            <ul class="model-tags" aria-label="HCM_ROMS topics">
+              <li>ROMS</li>
+              <li>Hybrid Coupling</li>
+              <li>ENSO</li>
+            </ul>
+            <a
+              class="model-link"
+              href="https://github.com/yangyu-climate/HCM_ROMS"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="View HCM_ROMS on GitHub"
+            >
+              View model on GitHub <span aria-hidden="true">&rarr;</span>
+            </a>
+          </article>
+
+          <article class="model-card">
+            <div class="model-card-topline">
+              <span class="model-icon" aria-hidden="true">WI</span>
+              <span class="model-category">Land–Atmosphere</span>
+            </div>
+            <h3>WRF_Irrigation</h3>
+            <p>
+              A WRF-based modeling framework for representing agricultural irrigation and
+              examining its effects on land-surface fluxes, near-surface meteorology, and regional
+              air quality.
+            </p>
+            <ul class="model-tags" aria-label="WRF_Irrigation topics">
+              <li>WRF</li>
+              <li>Irrigation</li>
+              <li>Land Surface</li>
+            </ul>
+            <a
+              class="model-link"
+              href="https://github.com/yangyu-climate/WRF_Irrigation"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="View WRF_Irrigation on GitHub"
+            >
+              View model on GitHub <span aria-hidden="true">&rarr;</span>
+            </a>
+          </article>
+        </div>
+      </section>
+
       <section class="section tools" id="tools">
         <div class="section-heading">
           <div>
             <div class="section-kicker">Open Research Software</div>
             <h2>Tools shared on GitHub</h2>
             <p class="tools-lede">
-              MATLAB-based workflows for atmospheric and ocean modeling, diagnostics, and
-              reproducible analysis.
+              Research workflows for atmospheric and ocean modeling, scientific diagnostics,
+              and reproducible analysis.
             </p>
           </div>
           <a
@@ -411,7 +489,7 @@
           <article class="tool-card">
             <div class="tool-card-topline">
               <span class="tool-icon" aria-hidden="true">TC</span>
-              <span class="tool-language">MATLAB / NCL</span>
+              <span class="tool-category">Cyclone Diagnostics</span>
             </div>
             <h3>TC_tool</h3>
             <p>
@@ -438,7 +516,7 @@
           <article class="tool-card">
             <div class="tool-card-topline">
               <span class="tool-icon" aria-hidden="true">RF</span>
-              <span class="tool-language">MATLAB</span>
+              <span class="tool-category">Model Inputs</span>
             </div>
             <h3>ROMS_Forcing</h3>
             <p>
@@ -465,7 +543,7 @@
           <article class="tool-card">
             <div class="tool-card-topline">
               <span class="tool-icon" aria-hidden="true">ML</span>
-              <span class="tool-language">MATLAB</span>
+              <span class="tool-category">Budget Analysis</span>
             </div>
             <h3>ML_Budget</h3>
             <p>
