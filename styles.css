@@ -625,6 +625,122 @@ h3 {
   white-space: nowrap;
 }
 
+.tools {
+  border-top: 1px solid var(--line);
+}
+
+.tools-lede {
+  max-width: 72ch;
+  margin: 0;
+  color: var(--muted);
+  font-size: 17px;
+}
+
+.github-profile-link,
+.tool-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  color: var(--accent);
+  font-weight: 900;
+}
+
+.github-profile-link {
+  flex: 0 0 auto;
+  white-space: nowrap;
+}
+
+.github-profile-link span,
+.tool-link span {
+  transition: transform 180ms ease;
+}
+
+.github-profile-link:hover span {
+  transform: translate(2px, -2px);
+}
+
+.tool-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.tool-card {
+  display: flex;
+  min-width: 0;
+  flex-direction: column;
+  padding: 26px;
+  border: 1px solid var(--line);
+  border-top: 4px solid color-mix(in srgb, var(--accent-2) 78%, var(--surface));
+  border-radius: 8px;
+  background: color-mix(in srgb, var(--surface) 95%, var(--surface-2));
+  box-shadow: var(--shadow);
+}
+
+.tool-card-topline {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+  margin-bottom: 20px;
+}
+
+.tool-icon {
+  display: grid;
+  place-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 8px;
+  background: color-mix(in srgb, var(--accent-2) 12%, var(--surface));
+  color: var(--accent-2);
+  font-size: 13px;
+  font-weight: 950;
+}
+
+.tool-language {
+  color: var(--muted);
+  font-size: 12px;
+  font-weight: 850;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.tool-card h3 {
+  color: var(--ocean);
+  font-size: 24px;
+}
+
+.tool-card p {
+  flex: 1;
+  color: var(--muted);
+}
+
+.tool-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+  margin: 4px 0 22px;
+  padding: 0;
+  list-style: none;
+}
+
+.tool-tags li {
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  padding: 5px 9px;
+  color: var(--accent-2);
+  font-size: 11px;
+  font-weight: 800;
+}
+
+.tool-link {
+  align-self: flex-start;
+}
+
+.tool-link:hover span {
+  transform: translateX(4px);
+}
+
 .project-list {
   display: grid;
   gap: 16px;
@@ -994,6 +1110,10 @@ time {
     grid-template-columns: 1fr;
   }
 
+  .tool-grid {
+    grid-template-columns: 1fr;
+  }
+
   .theme-card-secondary {
     gap: 0;
   }
@@ -1123,6 +1243,7 @@ time {
 
   .project,
   .contact-panel,
+  .tool-card,
   .cv-card,
   .cv-block {
     padding: 22px;
