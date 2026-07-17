@@ -1106,25 +1106,95 @@ time {
 
 .contact-panel {
   display: grid;
-  gap: 16px;
-  padding: 28px;
+  align-content: start;
+  gap: 22px;
+  padding: 34px;
+  border-top: 4px solid color-mix(in srgb, var(--accent) 82%, var(--surface));
 }
 
 .contact-panel a {
-  color: var(--accent);
-  font-size: clamp(22px, 4vw, 34px);
-  font-weight: 900;
   overflow-wrap: anywhere;
 }
 
-.contact-panel span {
+.contact-primary {
+  display: grid;
+  gap: 5px;
+}
+
+.contact-label {
   color: var(--muted);
+  font-size: 12px;
+  font-weight: 900;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
 }
 
-.orcid-link {
-  color: var(--accent-2);
+.contact-email {
+  color: var(--accent);
+  font-size: clamp(26px, 3vw, 38px);
   font-weight: 900;
-  overflow-wrap: anywhere;
+  line-height: 1.12;
+}
+
+.contact-details {
+  display: grid;
+  gap: 13px;
+  margin: 0;
+}
+
+.contact-details dt {
+  color: var(--muted);
+  font-size: 11px;
+  font-weight: 900;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.contact-details dd {
+  margin: 3px 0 0;
+  color: var(--muted);
+  font-size: 16px;
+}
+
+.contact-details dd a {
+  color: var(--text);
+  font-weight: 800;
+}
+
+.contact-panel .orcid-link {
+  display: inline-flex;
+  align-items: baseline;
+  justify-self: start;
+  gap: 10px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  padding: 8px 12px;
+  color: var(--accent-2);
+  font-size: 14px;
+  font-weight: 900;
+}
+
+.contact-panel .orcid-link span {
+  color: inherit;
+}
+
+.orcid-label {
+  font-size: 11px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.button.contact-copy {
+  align-self: start;
+  min-height: 42px;
+  border-color: var(--accent);
+  background: transparent;
+  color: var(--accent);
+  padding: 0 16px;
+}
+
+.button.contact-copy:hover {
+  background: color-mix(in srgb, var(--accent) 10%, var(--surface));
 }
 
 .copy-status {
@@ -1132,6 +1202,10 @@ time {
   margin: 0;
   color: var(--accent-2);
   font-weight: 700;
+}
+
+.copy-status:empty {
+  display: none;
 }
 
 .site-footer {
@@ -1331,6 +1405,10 @@ time {
 
   .button {
     width: 100%;
+  }
+
+  .button.contact-copy {
+    width: auto;
   }
 
   .project,
