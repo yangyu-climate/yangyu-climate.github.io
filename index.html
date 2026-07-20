@@ -20,8 +20,7 @@
       <nav class="nav" aria-label="Primary navigation">
         <a href="#about">About</a>
         <a href="#research">Research</a>
-        <a href="#models">Models</a>
-        <a href="#tools">Tools</a>
+        <a href="#models">Models &amp; Tools</a>
         <a href="#publications">Publications</a>
         <a href="#cv">CV</a>
         <a href="#contact">Contact</a>
@@ -36,8 +35,8 @@
       <section class="hero" id="home">
         <img
           class="hero-image"
-          src="assets/hero-ocean-modeling.png"
-          alt="Coastal ocean modeling visualization with regional circulation, bathymetry, and offshore wind infrastructure"
+          src="assets/hero-earth-wind.png"
+          alt="Earth system view of a coastline, offshore wind turbines, and coastal ocean-color patterns"
         />
         <div class="hero-overlay"></div>
         <div class="hero-content">
@@ -86,6 +85,83 @@
       </section>
 
       <section class="section work" id="research">
+        <div class="intro research-intro">
+          <div class="section-kicker">Research</div>
+          <div class="intro-grid intro-grid-single">
+            <div>
+              <h2>High-resolution modeling for regional climate and environmental change.</h2>
+              <p>
+                My research examines how local changes in land, water, and energy use propagate
+                through connected atmosphere, land, and ocean systems to shape regional climate
+                and environmental impacts. I combine process-based numerical modeling with
+                physical–statistical and data-driven approaches to study coupled Earth system
+                interactions under natural variability and human perturbations.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="research-overview">
+          <div class="ro-kicker">Research Overview</div>
+          <div class="ro-framework">
+            <div class="ro-globe" aria-hidden="true">◉</div>
+            <div class="ro-framework-title">
+              <span>Research Framework</span>
+              <h2>Regional Earth System Modeling</h2>
+            </div>
+            <div class="ro-framework-copy">
+              <p>
+                High-resolution regional Earth system modeling provides the foundation for my
+                research. I develop and apply atmospheric, oceanic, land-surface,
+                atmospheric-chemistry, and coupled modeling frameworks to resolve processes
+                that are often simplified in coarser-scale models and to connect local
+                perturbations with regional climate and environmental responses.
+              </p>
+              <div class="ro-pills"><span>WRF</span><span>WRF-Chem</span><span>ROMS</span><span>COAWST</span><span>Coupled Modeling</span></div>
+            </div>
+          </div>
+
+          <h2 class="ro-heading">Primary Research Areas</h2>
+          <div class="ro-areas">
+            <article class="ro-area ro-land">
+              <header><span class="ro-number">01</span><h3>Land–Atmosphere Interactions and<br />Human Land &amp; Water Management</h3></header>
+              <p>
+                I study how human land and water management, including irrigation and agricultural
+                fallowing, modifies land–atmosphere interactions, surface water and energy exchanges,
+                boundary-layer processes, dust emissions, air quality, and regional environmental conditions.
+              </p>
+              <div class="ro-pills ro-green"><span>Irrigation</span><span>Fallowing</span><span>Dust</span><span>Air Quality</span><span>Water Cycle</span></div>
+              <div class="ro-images">
+                <img class="ro-image-irrigation" src="https://unsplash.com/photos/6DMht7wYt6g/download?force=true&amp;w=1200" alt="Center-pivot irrigation over a green agricultural field" />
+                <img class="ro-image-dust" src="https://unsplash.com/photos/Y2LM85uq0KU/download?force=true&amp;w=1200" alt="Dust-filled storm approaching farmland" />
+              </div>
+            </article>
+
+            <article class="ro-area ro-ocean">
+              <header><span class="ro-number">02</span><h3>Coastal Ocean and Offshore Wind Impacts</h3></header>
+              <p>
+                I investigate how offshore wind development modifies atmospheric and oceanic processes
+                through changes in momentum, turbulence, mixing, stratification, circulation, and
+                air–sea exchange. My work uses coupled atmosphere–ocean–biogeochemical modeling
+                to examine nutrient pathways and ecosystem-relevant responses.
+              </p>
+              <div class="ro-pills ro-blue"><span>Offshore Wind</span><span>Air–Sea Interaction</span><span>Mixing &amp; Stratification</span><span>Circulation</span><span>Ecosystem Responses</span></div>
+              <div class="ro-images">
+                <img class="ro-image-wind" src="https://unsplash.com/photos/o6ccFTYlwgs/download?force=true&amp;w=1200" alt="Offshore wind turbines at sea" />
+          <div class="ro-image-frame"><img class="ro-image-ocean" src="assets/research/mid-atlantic-phytoplankton-bloom.png" alt="NASA PACE satellite view of phytoplankton blooms off the Mid-Atlantic coast" /></div>
+              </div>
+            </article>
+          </div>
+
+          <div class="ro-approaches">
+            <div class="ro-approach-title"><span aria-hidden="true">✦</span><h2>Modeling<br />Approaches</h2></div>
+            <article><h3>◌&nbsp; Coupled Modeling</h3><p>Developing and applying atmosphere–ocean–land coupled models to study cross-system interactions.</p></article>
+            <article><h3>⌁&nbsp; Process Diagnostics</h3><p>Using process-based analysis and numerical experiments to reveal mechanisms and quantify uncertainties.</p></article>
+            <article><h3>⌗&nbsp; Physical–Statistical Modeling</h3><p>Combining dynamical and statistical models for improved prediction and projection.</p></article>
+            <article><h3>✧&nbsp; AI / ML Methods</h3><p>Using ML for model analysis, emulation, and scalable Earth-system prediction.</p></article>
+          </div>
+        </div>
+
         <div class="section-heading">
           <div>
             <div class="section-kicker">Research</div>
@@ -388,7 +464,7 @@
         </div>
       </section>
 
-      <section class="section models" id="models">
+      <section class="section models-and-tools" id="models">
         <div class="section-heading">
           <div>
             <div class="section-kicker">Open Model Development</div>
@@ -463,26 +539,14 @@
             </a>
           </article>
         </div>
-      </section>
 
-      <section class="section tools" id="tools">
-        <div class="section-heading">
-          <div>
-            <div class="section-kicker">Open Research Software</div>
-            <h2>Tools shared on GitHub</h2>
-            <p class="tools-lede">
-              Research workflows supporting Earth system modeling, scientific diagnostics, and
-              reproducible analysis.
-            </p>
-          </div>
-          <a
-            class="github-profile-link"
-            href="https://github.com/yangyu-climate"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            All repositories <span aria-hidden="true">&nearr;</span>
-          </a>
+        <div class="tools-subsection" id="tools">
+          <div class="section-kicker">Open Research Software</div>
+          <h2>Tools shared on GitHub</h2>
+          <p class="tools-lede">
+            Research workflows supporting Earth system modeling, scientific diagnostics, and
+            reproducible analysis.
+          </p>
         </div>
 
         <div class="tool-grid">
