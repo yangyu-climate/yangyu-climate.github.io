@@ -1,6 +1,6 @@
 # Yang Yu Personal Website
 
-Static academic personal website for Yang Yu, Research Associate III in Physical Oceanography at Woods Hole Oceanographic Institution.
+Static academic personal website for Yang Yu, Research Associate III in Earth system modeling at Woods Hole Oceanographic Institution.
 
 The current content is synchronized with `CV_202607.pdf`.
 
@@ -13,7 +13,7 @@ Open `index.html` directly in a browser.
 - `index.html`: Page content, academic profile sections, and shared GitHub models and tools
 - `styles.css`: Layout, visual design, responsive behavior, and theme styles
 - `script.js`: Theme toggle, active navigation state, and email copy button
-- `assets/hero-new-england-offshore-wind.png`: New England offshore wind hero image asset
+- `assets/hero-earth-wind.png`: Current Earth system modeling hero image asset
 
 ## Update Checklist
 
