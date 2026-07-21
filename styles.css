@@ -100,7 +100,7 @@ img {
   display: flex;
   align-items: center;
   gap: clamp(12px, 3vw, 34px);
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 750;
 }
 
@@ -379,6 +379,26 @@ body:has(#home:target) .site-footer {
 /* The homepage is now a dedicated landing view; content lives on its own pages. */
 body:not(.standalone-page) main > section:not(#home),
 body:not(.standalone-page) .site-footer {
+  display: none;
+}
+
+/* Keep a quiet copyright mark on the landing page without adding scroll height. */
+body:not(.standalone-page) .site-footer,
+body:has(#home:target) .site-footer {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 4;
+  display: flex;
+  border-top: 1px solid var(--line);
+  background: var(--surface);
+  color: var(--muted);
+  pointer-events: none;
+}
+
+body:not(.standalone-page) .site-footer a,
+body:has(#home:target) .site-footer a {
   display: none;
 }
 
