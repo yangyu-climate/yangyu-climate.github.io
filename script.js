@@ -15,16 +15,11 @@ function updateHeader() {
 }
 
 function updateActiveLink() {
-  const sections = navLinks
-    .map((link) => document.querySelector(link.getAttribute("href")))
-    .filter(Boolean);
-
-  const current = sections.findLast((section) => {
-    return section.getBoundingClientRect().top <= 130;
-  });
-
+  const pageSection = document.body.dataset.section;
   navLinks.forEach((link) => {
-    link.classList.toggle("is-active", current && link.getAttribute("href") === `#${current.id}`);
+    const section = link.dataset.section;
+    const isModuleView = pageSection === section || window.location.hash === `#${section}`;
+    link.classList.toggle("is-active", isModuleView);
   });
 }
 
