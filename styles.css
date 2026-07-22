@@ -1369,12 +1369,12 @@ time {
 
 .ro-framework {
   display: grid;
-  grid-template-columns: 270px 1fr;
+  grid-template-columns: 235px minmax(0, 1fr);
   align-items: center;
   gap: 16px;
-  min-height: 156px;
-  margin: 6px 0 10px;
-  padding: 20px 28px;
+  min-height: 0;
+  margin: 6px 0 18px;
+  padding: 16px 22px;
   border: 1px solid var(--line);
   border-radius: 12px;
   background: var(--surface);
@@ -1399,10 +1399,11 @@ time {
 }
 
 .ro-framework-copy p {
-  margin: 0 0 9px;
+  margin: 0 0 8px;
   color: var(--muted);
   font-size: 16px;
-  line-height: 1.6;
+  line-height: 1.55;
+  text-wrap: balance;
 }
 
 .ro-pills {
@@ -1550,9 +1551,9 @@ time {
 
 .ro-approaches {
   display: grid;
-  grid-template-columns: 180px 0.93fr repeat(3, 1.0233fr);
-  min-height: 132px;
-  margin-top: 12px;
+  grid-template-columns: 205px repeat(4, minmax(0, 1fr));
+  min-height: 0;
+  margin-top: 14px;
   overflow: hidden;
   border: 1px solid var(--line);
   border-radius: 12px;
@@ -1560,8 +1561,9 @@ time {
   box-shadow: var(--shadow);
 }
 
-.ro-approach-title,
-.ro-approaches article { padding: 14px 13px; }
+.ro-approach-title { padding: 15px 16px; }
+
+.ro-approaches article { padding: 15px 12px; }
 
 .ro-approach-title {
   display: flex;
@@ -1581,7 +1583,7 @@ time {
 .ro-approaches article { border-left: 1px solid var(--line); }
 
 .ro-approaches article h3 {
-  min-height: 27px;
+  min-height: 26px;
   margin: 0;
   color: var(--ocean);
   font-size: 16px;
@@ -1589,7 +1591,8 @@ time {
 }
 
 .ro-approaches article:nth-of-type(3) h3 {
-  font-size: 16px;
+  font-size: 15px;
+  letter-spacing: 0;
   white-space: nowrap;
 }
 
@@ -1597,7 +1600,8 @@ time {
   margin: 7px 0 0;
   color: var(--muted);
   font-size: 16px;
-  line-height: 1.6;
+  line-height: 1.52;
+  text-wrap: balance;
 }
 
 .work .research-subheading { margin-top: clamp(18px, 2vw, 28px); }
