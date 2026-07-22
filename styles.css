@@ -1491,6 +1491,13 @@ time {
   text-wrap: pretty;
 }
 
+/* Accommodate the longer offshore-wind description without shifting its media row. */
+.ro-ocean > p {
+  margin-bottom: 8px;
+  line-height: 1.52;
+  letter-spacing: 0;
+}
+
 .ro-green span { background: color-mix(in srgb, var(--accent-2) 11%, var(--surface)); color: var(--accent-2); }
 .ro-blue {
   flex-wrap: nowrap;
