@@ -513,8 +513,8 @@ body.standalone-page[data-section="contact"] #contact {
 }
 
 #about p {
-  max-width: 875px;
-  font-size: 16.5px;
+  max-width: 930px;
+  font-size: 17px;
   line-height: 1.7;
   text-wrap: pretty;
 }
@@ -1369,7 +1369,7 @@ time {
 
 .ro-framework {
   display: grid;
-  grid-template-columns: 104px 230px 1fr;
+  grid-template-columns: 270px 1fr;
   align-items: center;
   gap: 16px;
   min-height: 156px;
@@ -1381,26 +1381,14 @@ time {
   box-shadow: var(--shadow);
 }
 
-.ro-globe {
-  display: grid;
-  width: 88px;
-  height: 88px;
-  place-items: center;
-  border-radius: 50%;
-  background: radial-gradient(circle at 36% 30%, color-mix(in srgb, var(--accent-2) 70%, #fff), var(--ocean) 70%);
-  color: color-mix(in srgb, var(--accent-2) 28%, #fff);
-  font-size: 42px;
-  transform: translateY(-8px);
-}
-
 .ro-framework-title span {
   color: var(--accent-2);
-  font-size: 13px;
+  font-size: 15px;
   font-weight: 900;
 }
 
 .ro-framework-title {
-  transform: translate(-12px, -8px);
+  transform: translateY(-8px);
 }
 
 .ro-framework-title h2 {
@@ -1818,16 +1806,11 @@ time {
 
 @media (max-width: 860px) {
   .ro-framework {
-    grid-template-columns: 82px 1fr;
+    grid-template-columns: 1fr;
   }
 
   .ro-framework-copy {
     grid-column: 1 / -1;
-  }
-
-  .ro-globe {
-    width: 68px;
-    height: 68px;
   }
 
   .ro-approaches {
