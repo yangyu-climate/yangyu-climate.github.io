@@ -34,6 +34,7 @@
 
 html {
   scroll-behavior: smooth;
+  scrollbar-gutter: stable;
 }
 
 body {
@@ -196,6 +197,10 @@ img {
 }
 
 .hero .eyebrow {
+  font-size: 14px;
+}
+
+.section-kicker {
   font-size: 14px;
 }
 
@@ -447,9 +452,12 @@ body.standalone-page[data-section="about"] #about {
   padding-top: clamp(200px, 20vh, 260px);
 }
 
-body.standalone-page[data-section="research"] #research,
-body.standalone-page[data-section="models"] #models {
+body.standalone-page[data-section="research"] #research {
   padding-top: clamp(72px, 6vw, 84px);
+}
+
+body.standalone-page[data-section="models"] #models {
+  padding-top: clamp(84px, 6.5vw, 96px);
 }
 
 body.standalone-page[data-section="contact"] #contact {
@@ -971,32 +979,30 @@ body.standalone-page[data-section="contact"] #contact {
 }
 
 .publications .section-heading h2 {
-  font-size: clamp(36px, 4.4vw, 48px);
+  font-size: clamp(28px, 3.2vw, 36px);
   white-space: nowrap;
 }
 
 .publication-groups {
   display: grid;
-  gap: 18px;
+  gap: 14px;
 }
 
 .publication-year {
   border: 1px solid var(--line);
   border-radius: 8px;
   background: color-mix(in srgb, var(--surface) 94%, var(--surface-2));
-  box-shadow: var(--shadow);
-}
-
-.publication-year {
-  padding: 24px;
+  box-shadow: 0 10px 26px rgba(23, 35, 47, 0.06);
+  padding: 20px 24px 22px;
 }
 
 .publication-year h3 {
   display: inline-flex;
   align-items: center;
   gap: 10px;
-  margin-bottom: 16px;
+  margin-bottom: 14px;
   color: var(--ocean);
+  font-size: 24px;
 }
 
 .publication-year h3::before {
@@ -1008,15 +1014,17 @@ body.standalone-page[data-section="contact"] #contact {
 
 .publication-list {
   display: grid;
-  gap: 14px;
+  gap: 12px;
   margin: 0;
-  padding-left: 24px;
+  padding-left: 26px;
 }
 
 .publication-list li {
   max-width: none;
   color: var(--muted);
   padding-left: 4px;
+  font-size: 15.5px;
+  line-height: 1.65;
   overflow-wrap: anywhere;
 }
 
