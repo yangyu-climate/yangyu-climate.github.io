@@ -1,4 +1,5 @@
 :root {
+  --landing-footer-height: 84px;
   color-scheme: light;
   --bg: #f7f8f6;
   --surface: #ffffff;
@@ -138,7 +139,8 @@ img {
 
 .hero {
   position: relative;
-  min-height: 90vh;
+  min-height: calc(100vh - var(--landing-footer-height));
+  min-height: calc(100svh - var(--landing-footer-height));
   display: grid;
   align-items: center;
   overflow: hidden;
@@ -242,9 +244,14 @@ h1 {
   font-size: clamp(20px, 2vw, 28px);
   font-weight: 800;
   line-height: 1.28;
+  text-wrap: wrap;
 }
 
 .no-wrap {
+  white-space: normal;
+}
+
+.no-break {
   white-space: nowrap;
 }
 
@@ -310,6 +317,7 @@ h3 {
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
+  max-width: 720px;
   margin: 20px 0 0;
   padding: 0;
   list-style: none;
@@ -387,19 +395,13 @@ body:not(.standalone-page) .site-footer {
   display: none;
 }
 
-/* Keep a quiet copyright mark on the landing page without adding scroll height. */
+/* Keep the copyright mark below the landing content so it never covers controls. */
 body:not(.standalone-page) .site-footer,
 body:has(#home:target) .site-footer {
-  position: fixed;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  z-index: 4;
   display: flex;
   border-top: 1px solid var(--line);
   background: var(--surface);
   color: var(--muted);
-  pointer-events: none;
 }
 
 body:not(.standalone-page) .site-footer a,
@@ -1656,7 +1658,7 @@ time {
   }
 
   .hero {
-    min-height: 94svh;
+    min-height: calc(100svh - var(--landing-footer-height));
   }
 
   .hero-overlay {
@@ -1771,7 +1773,7 @@ time {
   }
 
   .hero {
-    min-height: 92svh;
+    min-height: calc(100svh - var(--landing-footer-height));
   }
 
   .hero-content {
