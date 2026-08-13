@@ -247,14 +247,6 @@ h1 {
   text-wrap: wrap;
 }
 
-.no-wrap {
-  white-space: normal;
-}
-
-.no-break {
-  white-space: nowrap;
-}
-
 .keep-together {
   white-space: normal;
   overflow-wrap: anywhere;
@@ -1810,10 +1802,6 @@ time {
   }
 
   .publications .section-heading h2 {
-    white-space: normal;
-  }
-
-  .no-wrap {
     white-space: normal;
   }
 
