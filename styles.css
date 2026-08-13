@@ -171,10 +171,10 @@ img {
 .hero-content {
   position: relative;
   display: grid;
-  grid-template-columns: minmax(0, 1fr) clamp(230px, 28vw, 390px);
+  grid-template-columns: minmax(0, 1fr) clamp(230px, 24vw, 350px);
   align-items: center;
-  gap: clamp(28px, 4vw, 56px);
-  width: min(1320px, calc(100% - 72px));
+  gap: clamp(24px, 3vw, 40px);
+  width: min(1360px, calc(100% - 72px));
   margin: 0 auto;
   padding-top: clamp(96px, 13vh, 128px);
   padding-bottom: clamp(42px, 8vh, 72px);
