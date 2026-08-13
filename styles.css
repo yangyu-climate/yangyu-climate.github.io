@@ -238,7 +238,6 @@ h1 {
 }
 
 .hero-subtitle {
-  max-width: 800px;
   margin-bottom: 18px;
   color: #f4d681;
   font-size: clamp(20px, 2vw, 28px);
