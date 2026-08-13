@@ -251,6 +251,12 @@ h1 {
   white-space: normal;
 }
 
+/* Keep the final topic together on the second line of the landing subtitle. */
+.hero-subtitle .no-wrap::after {
+  content: "";
+  display: block;
+}
+
 .no-break {
   white-space: nowrap;
 }
