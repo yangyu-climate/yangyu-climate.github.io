@@ -173,8 +173,8 @@ img {
   display: grid;
   grid-template-columns: minmax(0, 1fr) clamp(230px, 28vw, 390px);
   align-items: center;
-  gap: clamp(28px, 6vw, 84px);
-  width: min(1180px, calc(100% - 72px));
+  gap: clamp(28px, 4vw, 56px);
+  width: min(1320px, calc(100% - 72px));
   margin: 0 auto;
   padding-top: clamp(96px, 13vh, 128px);
   padding-bottom: clamp(42px, 8vh, 72px);
@@ -249,12 +249,6 @@ h1 {
 
 .no-wrap {
   white-space: normal;
-}
-
-/* Keep the final topic together on the second line of the landing subtitle. */
-.hero-subtitle .no-wrap::after {
-  content: "";
-  display: block;
 }
 
 .no-break {
