@@ -18,7 +18,10 @@
         <span>Yang Yu</span>
       </a>
 
-      <nav class="nav" aria-label="Primary navigation">
+      <nav class="nav" id="primary-nav" aria-label="Primary navigation">
+        <a class="nav-home" href="index.html" aria-label="Yang Yu homepage">
+          <span>Home</span>
+        </a>
         <a href="about.html" data-section="about">About</a>
         <a href="research.html" data-section="research">Research</a>
         <a href="models-tools.html" data-section="models">Models &amp; Tools</a>
@@ -26,6 +29,10 @@
         <a href="cv.html" data-section="cv">CV</a>
         <a href="contact.html" data-section="contact">Contact</a>
       </nav>
+
+      <button class="nav-toggle" type="button" data-nav-toggle aria-label="Open navigation menu" aria-expanded="false" aria-controls="primary-nav">
+        <span class="nav-toggle-icon" aria-hidden="true"></span>
+      </button>
 
       <button class="icon-button" type="button" data-theme-toggle aria-label="Toggle color theme">
         <span class="sun" aria-hidden="true"></span>
@@ -102,27 +109,7 @@
           </div>
         </div>
 
-        <div class="research-overview">
-          <div class="ro-kicker">Research Overview</div>
-          <div class="ro-framework">
-            <div class="ro-framework-title">
-              <span>Research Framework</span>
-              <h2>Regional Earth System Modeling</h2>
-            </div>
-            <div class="ro-framework-copy">
-              <p>
-                High-resolution regional Earth system modeling provides the foundation for my
-                research. I develop and apply atmospheric, ocean, land-surface, atmospheric
-                chemistry, and coupled models to resolve processes that are often simplified or omitted
-                in coarse-resolution models and to understand how local perturbations
-                shape regional climate and environmental responses.
-              </p>
-              <div class="ro-pills"><span>WRF</span><span>WRF-Chem</span><span>ROMS</span><span>COAWST</span><span>Coupled Modeling</span></div>
-            </div>
-          </div>
-
-          <h2 class="ro-heading">Primary Research Areas</h2>
-          <div class="ro-areas">
+        <div class="ro-areas">
             <article class="ro-area ro-land">
               <header><span class="ro-number">01</span><h3>Land–Atmosphere Interactions and<br />Human Land &amp; Water Management</h3></header>
               <p>
@@ -154,15 +141,6 @@
                 </div>
               </div>
             </article>
-          </div>
-
-          <div class="ro-approaches">
-            <div class="ro-approach-title"><span aria-hidden="true">✦</span><h2>Modeling<br />Approaches</h2></div>
-            <article><h3>◌&nbsp; Coupled Modeling</h3><p>Developing and applying coupled models to study interactions among the atmosphere, land, and ocean.</p></article>
-            <article><h3>⌁&nbsp; Process Diagnostics</h3><p>Using process-based analysis and numerical experiments to reveal mechanisms and quantify uncertainties.</p></article>
-            <article><h3>⌗&nbsp; Physical–Statistical Modeling</h3><p>Combining dynamical and statistical models to study climate variability and coupled Earth system processes.</p></article>
-            <article><h3>✧&nbsp; AI / ML Methods</h3><p>Exploring AI/ML methods for model analysis, emulation, and efficient Earth system prediction.</p></article>
-          </div>
         </div>
 
         <div class="research-subheading">
@@ -170,8 +148,7 @@
         </div>
 
         <div class="project-list research-list">
-          <article class="project">
-            <img class="project-visual" src="assets/research/offshore-wind.svg" alt="Offshore wind, air–sea exchange, ocean mixing, and ecological response visualization" />
+          <article class="project project-no-visual">
             <div>
               <span class="project-type">Current Project</span>
               <h3>Offshore Wind and Coastal Ocean Impacts</h3>
@@ -399,14 +376,6 @@
               environmental change across regional Earth systems.
             </p>
           </div>
-          <a
-            class="github-profile-link"
-            href="https://github.com/yangyu-climate"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            All repositories <span aria-hidden="true">&nearr;</span>
-          </a>
         </div>
 
         <div class="model-grid">
@@ -561,9 +530,7 @@
         <div class="section-heading">
           <div>
             <div class="section-kicker">Publications</div>
-            <h2>Peer-Reviewed Journal Publications</h2>
           </div>
-          <span class="publication-count">32 peer-reviewed / 4 submitted</span>
         </div>
 
         <div class="publication-groups">
@@ -777,13 +744,6 @@
               </div>
             </article>
 
-            <article class="cv-block">
-              <h3>Publication Record</h3>
-              <p>
-                Complete record: 32 peer-reviewed journal publications and 4 submitted manuscripts.
-                See the <a href="publications.html">Publications</a> page.
-              </p>
-            </article>
           </div>
         </div>
       </section>

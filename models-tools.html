@@ -18,7 +18,10 @@
         <span>Yang Yu</span>
       </a>
 
-      <nav class="nav" aria-label="Primary navigation">
+      <nav class="nav" id="primary-nav" aria-label="Primary navigation">
+        <a class="nav-home" href="index.html" aria-label="Yang Yu homepage">
+          <span>Home</span>
+        </a>
         <a href="about.html" data-section="about">About</a>
         <a href="research.html" data-section="research">Research</a>
         <a href="models-tools.html" data-section="models">Models &amp; Tools</a>
@@ -26,6 +29,10 @@
         <a href="cv.html" data-section="cv">CV</a>
         <a href="contact.html" data-section="contact">Contact</a>
       </nav>
+
+      <button class="nav-toggle" type="button" data-nav-toggle aria-label="Open navigation menu" aria-expanded="false" aria-controls="primary-nav">
+        <span class="nav-toggle-icon" aria-hidden="true"></span>
+      </button>
 
       <button class="icon-button" type="button" data-theme-toggle aria-label="Toggle color theme">
         <span class="sun" aria-hidden="true"></span>
@@ -399,14 +406,6 @@
               environmental change across regional Earth systems.
             </p>
           </div>
-          <a
-            class="github-profile-link"
-            href="https://github.com/yangyu-climate"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            All repositories <span aria-hidden="true">&nearr;</span>
-          </a>
         </div>
 
         <div class="model-grid">
@@ -587,9 +586,7 @@
         <div class="section-heading">
           <div>
             <div class="section-kicker">Publications</div>
-            <h2>Peer-Reviewed Journal Publications</h2>
           </div>
-          <span class="publication-count">32 peer-reviewed / 4 submitted</span>
         </div>
 
         <div class="publication-groups">
@@ -803,13 +800,6 @@
               </div>
             </article>
 
-            <article class="cv-block">
-              <h3>Publication Record</h3>
-              <p>
-                Complete record: 32 peer-reviewed journal publications and 4 submitted manuscripts.
-                See the <a href="publications.html">Publications</a> page.
-              </p>
-            </article>
           </div>
         </div>
       </section>

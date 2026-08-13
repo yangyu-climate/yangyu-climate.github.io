@@ -1,6 +1,7 @@
 const root = document.documentElement;
 const header = document.querySelector("[data-header]");
 const themeToggle = document.querySelector("[data-theme-toggle]");
+const navToggle = document.querySelector("[data-nav-toggle]");
 const copyEmailButton = document.querySelector("[data-copy-email]");
 const copyStatus = document.querySelector("[data-copy-status]");
 const navLinks = [...document.querySelectorAll(".nav a")];
@@ -31,6 +32,26 @@ themeToggle.addEventListener("click", () => {
   } else {
     delete root.dataset.theme;
     localStorage.removeItem("theme");
+  }
+});
+
+function setNavOpen(isOpen) {
+  header.classList.toggle("is-nav-open", isOpen);
+  navToggle?.setAttribute("aria-expanded", String(isOpen));
+  navToggle?.setAttribute("aria-label", isOpen ? "Close navigation menu" : "Open navigation menu");
+}
+
+navToggle?.addEventListener("click", () => {
+  setNavOpen(!header.classList.contains("is-nav-open"));
+});
+
+navLinks.forEach((link) => {
+  link.addEventListener("click", () => setNavOpen(false));
+});
+
+window.addEventListener("resize", () => {
+  if (window.innerWidth > 860) {
+    setNavOpen(false);
   }
 });
 

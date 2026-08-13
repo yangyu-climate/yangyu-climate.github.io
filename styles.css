@@ -116,6 +116,14 @@ img {
   color: var(--accent);
 }
 
+.nav-home {
+  display: none;
+}
+
+.nav-toggle {
+  display: none;
+}
+
 .icon-button {
   display: grid;
   place-items: center;
@@ -171,7 +179,7 @@ img {
 .hero-content {
   position: relative;
   display: grid;
-  grid-template-columns: minmax(0, 1fr) clamp(230px, 24vw, 350px);
+  grid-template-columns: minmax(0, 1.2fr) minmax(0, 0.8fr);
   align-items: center;
   gap: clamp(24px, 3vw, 40px);
   width: min(1360px, calc(100% - 72px));
@@ -260,8 +268,7 @@ h1 {
   width: 100%;
   max-width: 390px;
   margin: 0;
-  justify-self: end;
-  transform: translateX(clamp(-72px, -4vw, -40px));
+  justify-self: center;
   aspect-ratio: 4 / 5;
   border: 6px solid rgba(255, 255, 255, 0.88);
   border-radius: 8px;
@@ -981,6 +988,10 @@ body.standalone-page[data-section="contact"] #contact {
   white-space: nowrap;
 }
 
+.publications .section-heading {
+  margin-bottom: 14px;
+}
+
 .publication-groups {
   display: grid;
   gap: 14px;
@@ -1061,6 +1072,10 @@ body.standalone-page[data-section="contact"] #contact {
 
 .project:first-child {
   grid-template-columns: 170px minmax(220px, 0.58fr) minmax(0, 1.18fr) minmax(170px, 200px);
+}
+
+.project.project-no-visual {
+  grid-template-columns: minmax(280px, 0.65fr) minmax(0, 1.55fr) minmax(170px, 210px);
 }
 
 .project > .project-visual {
@@ -1450,6 +1465,7 @@ time {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 13px;
+  margin-top: clamp(24px, 3vw, 36px);
 }
 
 .ro-area {
@@ -1670,28 +1686,102 @@ time {
   }
 
   .site-header {
-    grid-template-columns: 1fr auto;
+    grid-template-columns: auto 1fr auto;
   }
 
   .icon-button {
-    grid-column: 2;
+    grid-column: 3;
     grid-row: 1;
     justify-self: end;
   }
 
+  .nav-toggle {
+    grid-column: 1;
+    grid-row: 1;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 42px;
+    height: 42px;
+    padding: 0;
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    background: transparent;
+    color: var(--text);
+    font: inherit;
+    font-size: 14px;
+    font-weight: 800;
+    cursor: pointer;
+  }
+
+  .nav-toggle-icon,
+  .nav-toggle-icon::before,
+  .nav-toggle-icon::after {
+    display: block;
+    width: 15px;
+    height: 2px;
+    border-radius: 1px;
+    background: currentColor;
+    content: "";
+  }
+
+  .nav-toggle-icon {
+    position: relative;
+  }
+
+  .nav-toggle-icon::before,
+  .nav-toggle-icon::after {
+    position: absolute;
+    left: 0;
+  }
+
+  .nav-toggle-icon::before {
+    top: -5px;
+  }
+
+  .nav-toggle-icon::after {
+    top: 5px;
+  }
+
   .nav {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    left: 0;
     grid-column: 1 / -1;
     grid-row: 2;
-    justify-self: start;
+    display: none;
+    justify-self: stretch;
     width: 100%;
-    flex-wrap: wrap;
-    gap: 8px 16px;
-    overflow: visible;
-    padding-bottom: 0;
+    grid-template-columns: 1fr;
+    gap: 4px;
+    padding: 10px clamp(18px, 4vw, 56px) 14px;
+    border-top: 1px solid var(--line);
+    background: color-mix(in srgb, var(--surface) 98%, transparent);
+    box-shadow: 0 12px 24px rgba(23, 35, 47, 0.1);
+  }
+
+  .site-header > .brand {
+    display: none;
+  }
+
+  .site-header.is-nav-open .nav {
+    display: grid;
+  }
+
+  .nav a {
+    padding: 9px 10px;
+    border-radius: 6px;
+    background: color-mix(in srgb, var(--surface-2) 72%, transparent);
+  }
+
+  .nav .nav-home {
+    display: inline-flex;
+    align-items: center;
   }
 
   .hero {
-    min-height: calc(100svh - var(--landing-footer-height));
+    min-height: auto;
   }
 
   .hero-overlay {
@@ -1700,19 +1790,18 @@ time {
 
   .hero-content {
     grid-template-columns: 1fr;
-    align-self: end;
+    align-self: start;
     width: min(760px, calc(100% - 36px));
     margin: 0 auto;
     padding: 64px 0 40px;
   }
 
   .hero-portrait {
-    width: min(210px, 56vw);
-    justify-self: start;
-    order: -1;
-    transform: none;
-    aspect-ratio: 1;
-    border-radius: 50%;
+    display: none;
+  }
+
+  .ro-approaches {
+    display: none;
   }
 
   .hero-copy {
@@ -1807,16 +1896,12 @@ time {
   }
 
   .hero {
-    min-height: calc(100svh - var(--landing-footer-height));
+    min-height: auto;
   }
 
   .hero-content {
-    padding-top: 56px;
+    padding-top: 32px;
     padding-bottom: 28px;
-  }
-
-  .hero-portrait {
-    width: min(150px, 42vw);
   }
 
   .hero-keywords {
