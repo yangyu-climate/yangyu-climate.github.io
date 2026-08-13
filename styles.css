@@ -246,6 +246,10 @@ h1 {
   text-wrap: wrap;
 }
 
+.hero-topic {
+  white-space: nowrap;
+}
+
 .keep-together {
   white-space: normal;
   overflow-wrap: anywhere;
@@ -257,6 +261,7 @@ h1 {
   max-width: 390px;
   margin: 0;
   justify-self: end;
+  transform: translateX(clamp(-72px, -4vw, -40px));
   aspect-ratio: 4 / 5;
   border: 6px solid rgba(255, 255, 255, 0.88);
   border-radius: 8px;
@@ -1617,6 +1622,43 @@ time {
 
 .work .research-subheading { margin-top: clamp(18px, 2vw, 28px); }
 
+@media (max-width: 1100px) {
+  .site-header {
+    position: sticky;
+    grid-template-columns: 1fr auto;
+  }
+
+  body.standalone-page[data-section="about"] #about,
+  body.standalone-page[data-section="research"] #research,
+  body.standalone-page[data-section="models"] #models,
+  body.standalone-page[data-section="publications"] #publications,
+  body.standalone-page[data-section="cv"] #cv,
+  body.standalone-page[data-section="contact"] #contact {
+    padding-top: clamp(48px, 6vw, 72px);
+  }
+
+  body.standalone-page[data-section="contact"] #contact {
+    transform: none;
+  }
+
+  .icon-button {
+    grid-column: 2;
+    grid-row: 1;
+    justify-self: end;
+  }
+
+  .nav {
+    grid-column: 1 / -1;
+    grid-row: 2;
+    justify-self: start;
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 8px 16px;
+    overflow: visible;
+    padding-bottom: 0;
+  }
+}
+
 @media (max-width: 860px) {
   .models-and-tools .section-heading {
     align-items: flex-start;
@@ -1661,13 +1703,14 @@ time {
     align-self: end;
     width: min(760px, calc(100% - 36px));
     margin: 0 auto;
-    padding: 128px 0 40px;
+    padding: 64px 0 40px;
   }
 
   .hero-portrait {
     width: min(210px, 56vw);
     justify-self: start;
     order: -1;
+    transform: none;
     aspect-ratio: 1;
     border-radius: 50%;
   }
@@ -1768,7 +1811,7 @@ time {
   }
 
   .hero-content {
-    padding-top: 116px;
+    padding-top: 56px;
     padding-bottom: 28px;
   }
 
