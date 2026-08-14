@@ -1657,6 +1657,14 @@ time {
     transform: none;
   }
 
+  .ro-areas {
+    grid-template-columns: 1fr;
+  }
+
+  .ro-ocean h3 {
+    white-space: normal;
+  }
+
   .icon-button {
     grid-column: 2;
     grid-row: 1;
