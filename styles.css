@@ -179,7 +179,7 @@ img {
 .hero-content {
   position: relative;
   display: grid;
-  grid-template-columns: minmax(0, 1.2fr) minmax(0, 0.8fr);
+  grid-template-columns: minmax(0, 1.3fr) minmax(0, 0.7fr);
   align-items: center;
   gap: clamp(24px, 3vw, 40px);
   width: min(1360px, calc(100% - 72px));
@@ -248,7 +248,7 @@ h1 {
 .hero-subtitle {
   margin-bottom: 18px;
   color: #f4d681;
-  font-size: clamp(20px, 2vw, 28px);
+  font-size: clamp(18px, 1.6vw, 24px);
   font-weight: 800;
   line-height: 1.28;
   text-wrap: wrap;
