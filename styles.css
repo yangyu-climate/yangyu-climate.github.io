@@ -467,9 +467,11 @@ body.standalone-page[data-section="models"] #models {
 
 body.standalone-page[data-section="contact"] #contact {
   display: grid;
-  grid-template-columns: minmax(0, 1.2fr) minmax(360px, 0.8fr);
+  grid-template-columns: minmax(0, 1fr) minmax(420px, 0.9fr);
+  column-gap: clamp(36px, 4vw, 60px);
+  width: min(1120px, calc(100% - 36px));
   align-items: center;
-  transform: translateY(36px);
+  transform: none;
 }
 
 /* Keep the two introductory sections visually connected without changing
@@ -517,6 +519,11 @@ body.standalone-page[data-section="contact"] #contact {
 .contact p,
 .cv-block p {
   max-width: 66ch;
+}
+
+.contact > div:first-child > p {
+  font-size: 18px;
+  line-height: 1.65;
 }
 
 .intro p {
@@ -1255,15 +1262,17 @@ time {
 /* The standalone Contact view remains a two-column composition. */
 #contact:target {
   display: grid;
-  grid-template-columns: minmax(0, 1.2fr) minmax(360px, 0.8fr);
+  grid-template-columns: minmax(0, 1fr) minmax(420px, 0.9fr);
+  column-gap: clamp(36px, 4vw, 60px);
+  width: min(1120px, calc(100% - 36px));
   align-items: center;
 }
 
 .contact-panel {
   display: grid;
   align-content: start;
-  gap: 20px;
-  padding: 30px;
+  gap: 16px;
+  padding: 26px;
   border-top: 4px solid color-mix(in srgb, var(--accent) 82%, var(--surface));
 }
 
@@ -1278,7 +1287,7 @@ time {
 
 .contact-label {
   color: var(--muted);
-  font-size: 12px;
+  font-size: 14px;
   font-weight: 900;
   letter-spacing: 0.06em;
   text-transform: uppercase;
@@ -1286,7 +1295,7 @@ time {
 
 .contact-email {
   color: var(--accent);
-  font-size: clamp(22px, 2.4vw, 30px);
+  font-size: clamp(19px, 1.8vw, 25px);
   font-weight: 900;
   line-height: 1.12;
 }
@@ -1299,7 +1308,7 @@ time {
 
 .contact-details dt {
   color: var(--muted);
-  font-size: 11px;
+  font-size: 13px;
   font-weight: 900;
   letter-spacing: 0.06em;
   text-transform: uppercase;
@@ -1308,7 +1317,7 @@ time {
 .contact-details dd {
   margin: 3px 0 0;
   color: var(--muted);
-  font-size: 16px;
+  font-size: 18px;
 }
 
 .contact-details dd a {
@@ -1324,7 +1333,7 @@ time {
   border-radius: 999px;
   padding: 8px 12px;
   color: var(--accent-2);
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 900;
 }
 
@@ -1333,19 +1342,29 @@ time {
 }
 
 .orcid-label {
-  font-size: 11px;
+  font-size: 13px;
   letter-spacing: 0.06em;
   text-transform: uppercase;
 }
 
 .contact-actions {
+  display: grid;
+  gap: 12px;
+}
+
+.contact-profiles {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  gap: 10px;
+  gap: 8px;
+}
+
+.contact-profiles .orcid-link {
+  width: auto;
 }
 
 .button.contact-copy {
+  justify-self: start;
   min-height: 42px;
   border-color: var(--accent);
   background: transparent;
