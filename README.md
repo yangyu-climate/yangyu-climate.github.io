@@ -2,7 +2,7 @@
 
 Static academic personal website for Yang Yu, Research Associate III in Earth system modeling at Woods Hole Oceanographic Institution.
 
-The current content is synchronized with `CV_202607.pdf`.
+The current content is synchronized with `CV_202611.pdf`.
 
 ## Preview
 
